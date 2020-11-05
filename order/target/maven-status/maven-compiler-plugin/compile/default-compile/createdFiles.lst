@@ -1,0 +1,13 @@
+rentalbook\external\Rent.class
+rentalbook\OrderCancelled.class
+rentalbook\config\kafka\KafkaProcessor.class
+rentalbook\OrderApplication.class
+rentalbook\AbstractEvent$1.class
+rentalbook\Ordered.class
+rentalbook\AbstractEvent.class
+rentalbook\Order.class
+rentalbook\PolicyHandler.class
+rentalbook\external\RentService.class
+rentalbook\OrderController.class
+rentalbook\Shipped.class
+rentalbook\OrderRepository.class
