@@ -14,15 +14,6 @@ public class Order {
     private String item;
     private String status;
 
-    @PrePersist
-    public void onPrePersist(){
-        try {
-            Thread.currentThread().sleep((long) (800 + Math.random() * 300));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
     @PostPersist
     public void onPostPersist(){
         Ordered ordered = new Ordered();

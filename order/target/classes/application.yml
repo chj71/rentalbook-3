@@ -42,16 +42,6 @@ api:
   rent:
     url: http://localhost:8082
 
-feign:
-  hystrix:
-    enabled: true
-
-hystrix:
-  command:
-    # 전역설정
-    default:
-      execution.isolation.thread.timeoutInMilliseconds: 2000
-
 ---
 
 spring:

@@ -19,6 +19,13 @@ public class Rent {
         Rented rented = new Rented();
         BeanUtils.copyProperties(this, rented);
         rented.publishAfterCommit();
+
+        try {
+            Thread.currentThread().sleep((long) (800 + Math.random() * 300));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @PreUpdate
