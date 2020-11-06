@@ -42,6 +42,15 @@ api:
   rent:
     url: http://localhost:8082
 
+feign:
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 100000
+
 ---
 
 spring:
@@ -71,3 +80,13 @@ spring:
 api:
   rent:
     url: http://rent:8080
+    
+feign:
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution.isolation.thread.timeoutInMilliseconds: 100000
+

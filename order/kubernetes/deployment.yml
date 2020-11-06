@@ -19,19 +19,19 @@ spec:
           image: username/order:latest
           ports:
             - containerPort: 8080
-          readinessProbe:
-            httpGet:
-              path: '/actuator/health'
-              port: 8080
-            initialDelaySeconds: 10
-            timeoutSeconds: 2
-            periodSeconds: 5
-            failureThreshold: 10
+              #readinessProbe:
+              #httpGet:
+              #path: '/actuator/readiness'
+              #port: 8080
+              #initialDelaySeconds: 10
+              #timeoutSeconds: 2
+              #periodSeconds: 5
+              #failureThreshold: 10
           livenessProbe:
             httpGet:
               path: '/actuator/health'
-              port: 8080
-            initialDelaySeconds: 120
-            timeoutSeconds: 2
-            periodSeconds: 5
-            failureThreshold: 5
+              port: 40001
+            initialDelaySeconds: 15
+            periodSeconds: 15
+            timeoutSeconds: 5
+
